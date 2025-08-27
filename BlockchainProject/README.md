@@ -12,10 +12,11 @@ pip install streamlit plotly pandas numpy google-cloud-bigquery seaborn matplotl
 2. Download Files
 Save these 2 files in the same folder:
 
-ethereum_dashboard.py (Streamlit app)
-enhanced_ethereum_analytics.py (Analytics engine)
+dashboard.py (Streamlit app)
+WalletAnalytics.py (Analytics engine)
 
 3. Run Dashboard
-bashstreamlit run ethereum_dashboard.py
+bash streamlit run dashboard.py
+
 
 The dashboard will open in your browser.
