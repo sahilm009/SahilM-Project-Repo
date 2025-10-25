@@ -1,2 +1,2 @@
 # SahilM-Project-Repo
-Some cool stuff I have worked on for school, research, jobs, and in my free time
+A collection of AI, data, and software projects I’ve worked on through school, research, professional experience, and personal exploration.
