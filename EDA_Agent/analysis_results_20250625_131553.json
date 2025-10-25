@@ -1,0 +1,311 @@
+{
+  "basic_statistics": {
+    "store": {
+      "count": 913000,
+      "mean": 5.5,
+      "std": 2.8722828962611735,
+      "min": 1.0,
+      "max": 10.0,
+      "null_count": 0,
+      "unique_count": 10
+    },
+    "item": {
+      "count": 913000,
+      "mean": 25.5,
+      "std": 14.430877592663753,
+      "min": 1.0,
+      "max": 50.0,
+      "null_count": 0,
+      "unique_count": 50
+    },
+    "sales": {
+      "count": 913000,
+      "mean": 52.250286966046005,
+      "std": 28.801143603517097,
+      "min": 0.0,
+      "max": 231.0,
+      "null_count": 0,
+      "unique_count": 213
+    }
+  },
+  "data_quality": {
+    "dataset_info": {
+      "shape": [
+        913000,
+        4
+      ],
+      "memory_usage_mb": 72.26861190795898,
+      "duplicate_rows": 0
+    },
+    "column_quality": {
+      "date": {
+        "data_type": "object",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 1826,
+        "unique_percentage": 0.2
+      },
+      "store": {
+        "data_type": "int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 10,
+        "unique_percentage": 0.001095290251916758,
+        "mean": 5.5,
+        "std": 2.8722828962611735,
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "item": {
+        "data_type": "int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 50,
+        "unique_percentage": 0.00547645125958379,
+        "mean": 25.5,
+        "std": 14.430877592663753,
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "sales": {
+        "data_type": "int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 213,
+        "unique_percentage": 0.023329682365826943,
+        "mean": 52.250286966046005,
+        "std": 28.801143603517097,
+        "zero_count": 1,
+        "negative_count": 0
+      }
+    }
+  },
+  "missing_analysis": {
+    "overall_missing_percentage": 0.0,
+    "columns_with_missing": [],
+    "column_missing_stats": {
+      "date": {
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "data_type": "object"
+      },
+      "store": {
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "data_type": "int64"
+      },
+      "item": {
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "data_type": "int64"
+      },
+      "sales": {
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "data_type": "int64"
+      }
+    },
+    "missing_patterns": {
+      "(False, False, False, False)": 913000
+    }
+  },
+  "correlation_analysis": {
+    "correlation_matrix": {
+      "store": {
+        "store": 1.0,
+        "item": 7.27604223815544e-15,
+        "sales": -0.008170361306181784
+      },
+      "item": {
+        "store": 7.27604223815544e-15,
+        "item": 1.0,
+        "sales": -0.05599807493658733
+      },
+      "sales": {
+        "store": -0.008170361306181784,
+        "item": -0.05599807493658733,
+        "sales": 1.0
+      }
+    },
+    "high_correlations": [],
+    "method": "pearson"
+  },
+  "advanced_analysis": {
+    "outlier_analysis": {
+      "store": {
+        "method": "iqr",
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "outlier_values": [],
+        "bounds": {
+          "lower": -4.5,
+          "upper": 15.5
+        }
+      },
+      "item": {
+        "method": "iqr",
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "outlier_values": [],
+        "bounds": {
+          "lower": -24.5,
+          "upper": 75.5
+        }
+      },
+      "sales": {
+        "method": "iqr",
+        "outlier_count": 11967,
+        "outlier_percentage": 1.3107338444687842,
+        "outlier_values": [
+          139,
+          131,
+          138,
+          134,
+          136,
+          150,
+          131,
+          135,
+          131,
+          137,
+          135,
+          137,
+          135,
+          132,
+          131,
+          133,
+          137,
+          138,
+          145,
+          134,
+          131,
+          144,
+          134,
+          138,
+          131,
+          136,
+          148,
+          131,
+          133,
+          145,
+          136,
+          131,
+          132,
+          139,
+          141,
+          144,
+          133,
+          136,
+          131,
+          138,
+          140,
+          135,
+          135,
+          135,
+          131,
+          139,
+          134,
+          133,
+          131,
+          141
+        ],
+        "bounds": {
+          "lower": -30.0,
+          "upper": 130.0
+        }
+      }
+    },
+    "categorical_analysis": {
+      "date": {
+        "unique_count": 1826,
+        "most_frequent": "2013-01-01",
+        "most_frequent_count": 500,
+        "least_frequent": "2017-12-31",
+        "least_frequent_count": 500,
+        "value_distribution": {
+          "2013-01-01": 500,
+          "2013-01-02": 500,
+          "2013-01-03": 500,
+          "2013-01-04": 500,
+          "2013-01-05": 500,
+          "2013-01-06": 500,
+          "2013-01-07": 500,
+          "2013-01-08": 500,
+          "2013-01-09": 500,
+          "2013-01-10": 500,
+          "2013-01-11": 500,
+          "2013-01-12": 500,
+          "2013-01-13": 500,
+          "2013-01-14": 500,
+          "2013-01-15": 500,
+          "2013-01-16": 500,
+          "2013-01-17": 500,
+          "2013-01-18": 500,
+          "2013-01-19": 500,
+          "2013-01-20": 500
+        },
+        "cardinality_ratio": 0.002
+      }
+    },
+    "distribution_analysis": {
+      "store": {
+        "type": "numeric",
+        "skewness": 0.0,
+        "kurtosis": -1.2242425570025237,
+        "quartiles": {
+          "Q1": 3.0,
+          "Q2": 5.5,
+          "Q3": 8.0,
+          "IQR": 5.0
+        },
+        "histogram_data": 91300.0
+      },
+      "item": {
+        "type": "numeric",
+        "skewness": 0.0,
+        "kurtosis": -1.2009603894103,
+        "quartiles": {
+          "Q1": 13.0,
+          "Q2": 25.5,
+          "Q3": 38.0,
+          "IQR": 25.0
+        },
+        "histogram_data": 91300.0
+      },
+      "sales": {
+        "type": "numeric",
+        "skewness": 0.8671122960235801,
+        "kurtosis": 0.5090704757198123,
+        "quartiles": {
+          "Q1": 30.0,
+          "Q2": 47.0,
+          "Q3": 70.0,
+          "IQR": 40.0
+        },
+        "histogram_data": 91300.0
+      },
+      "date": {
+        "type": "categorical",
+        "unique_values": 1826,
+        "top_values": {
+          "2013-01-01": 500,
+          "2013-01-02": 500,
+          "2013-01-03": 500,
+          "2013-01-04": 500,
+          "2013-01-05": 500,
+          "2013-01-06": 500,
+          "2013-01-07": 500,
+          "2013-01-08": 500,
+          "2013-01-09": 500,
+          "2013-01-10": 500
+        },
+        "entropy": 10.834471049984598
+      }
+    },
+    "duplicate_analysis": {
+      "duplicate_count": 0,
+      "duplicate_percentage": 0.0,
+      "unique_rows": 913000,
+      "columns_with_all_duplicates": []
+    }
+  }
+}
