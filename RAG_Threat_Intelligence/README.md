@@ -12,17 +12,23 @@ Python 3.8+
 Ollama (https://ollama.ai)
 
 Installation
+
+
 bashpip install -r requirements.txt
 ollama pull llama3.2
 python threat_intel_assistant.py
 
 
 Security Operations Context
+
+
 This project demonstrates capabilities directly applicable to enterprise security operations and threat intelligence platforms. The architecture mirrors commercial SIEM/SOAR solutions that enrich security alerts with threat intelligence context during incident investigation. Modern XDR and EDR platforms rely on similar retrieval systems to correlate endpoint telemetry with known threat actor TTPs and malware behaviors.
 The implementation showcases skills in threat intelligence operations, including working with structured threat data from industry-standard sources (NVD, MITRE ATT&CK), building semantic search over security indicators, and automating the kind of research that security analysts perform manually during investigations. These are core competencies for security engineering roles focused on detection, response, and threat hunting.
 
 
 Technical Architecture
+
+
 Data Ingestion: Pulls CVE data from the National Vulnerability Database API and MITRE ATT&CK techniques from the official repository. Includes custom threat actor and malware family profiles.
 Vector Storage: Converts threat intelligence documents into 300-dimensional embeddings using hash-based vectorization. Implements cosine similarity search for semantic retrieval.
 RAG Pipeline: Processes queries through three stages - retrieve relevant documents via vector search, augment retrieved context into a structured prompt, and generate natural language responses using Ollama's local LLM.
