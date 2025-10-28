@@ -11,9 +11,13 @@ Installation
 bashpip install -r requirements.txt
 ollama pull llama3.2
 python threat_intel_assistant.py
+
+
 Security Operations Context
 This project demonstrates capabilities directly applicable to enterprise security operations and threat intelligence platforms. The architecture mirrors commercial SIEM/SOAR solutions that enrich security alerts with threat intelligence context during incident investigation. Modern XDR and EDR platforms rely on similar retrieval systems to correlate endpoint telemetry with known threat actor TTPs and malware behaviors.
 The implementation showcases skills in threat intelligence operations, including working with structured threat data from industry-standard sources (NVD, MITRE ATT&CK), building semantic search over security indicators, and automating the kind of research that security analysts perform manually during investigations. These are core competencies for security engineering roles focused on detection, response, and threat hunting.
+
+
 Technical Architecture
 Data Ingestion: Pulls CVE data from the National Vulnerability Database API and MITRE ATT&CK techniques from the official repository. Includes custom threat actor and malware family profiles.
 Vector Storage: Converts threat intelligence documents into 300-dimensional embeddings using hash-based vectorization. Implements cosine similarity search for semantic retrieval.
@@ -24,6 +28,8 @@ Alert Enrichment: Automatically research CVEs, techniques, and IOCs that appear 
 Threat Hunting: Query relationships between malware families, threat actors, and attack techniques during proactive hunting exercises.
 Incident Response: Rapidly access threat intelligence during active incidents to understand attacker TTPs and predict lateral movement.
 Vulnerability Management: Research CVE details, exploitation methods, and threat actor interest to prioritize patching decisions.
+
+
 Example Queries
 
 "What is CVE-2024-3094 and how is it exploited?"
@@ -31,6 +37,7 @@ Example Queries
 "Describe Emotet malware and its TTPs"
 "What MITRE techniques involve PowerShell execution?"
 "How does LockBit ransomware operate?"
+
 
 Knowledge Base Contents
 
