@@ -1,5 +1,9 @@
 RAG-Powered Threat Intelligence Assistant
+
+
 Overview
+
+
 This project implements a Retrieval-Augmented Generation (RAG) system for cybersecurity threat intelligence analysis. RAG combines vector-based document retrieval with large language model generation to provide accurate, contextual answers grounded in real data. The system queries a local knowledge base of threat intelligence, retrieves relevant documents through semantic search, and synthesizes natural language responses using a local LLM.
 The assistant provides instant access to CVE vulnerabilities, MITRE ATT&CK techniques, malware family profiles, and threat actor intelligence through natural language queries. It automatically aggregates data from the National Vulnerability Database and MITRE ATT&CK framework into a searchable vector store. Users can ask questions about specific vulnerabilities, attack techniques, threat actors, or malware families and receive detailed technical summaries with source citations.
 Requirements
